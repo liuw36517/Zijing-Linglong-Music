@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>紫荆玲珑</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>♜ 紫荆玲珑</h1>
+        <p>本地音乐播放器</p>
+    </header>
+
+
+    <section class="upload-box">
+
+        <label class="upload-btn">
+
+            + 添加音乐
+
+            <input 
+            id="musicUpload"
+            type="file"
+            accept="audio/*"
+            multiple
+            >
+
+        </label>
+
+    </section>
+
+
+
+    <section class="player">
+
+        <img 
+        id="cover"
+        src="assets/default-cover.jpg"
+        alt="cover"
+        >
+
+
+        <h2 id="songName">
+            暂无歌曲
+        </h2>
+
+
+        <audio id="audioPlayer"
+        controls>
+        </audio>
+
+
+        <div class="controls">
+
+            <button id="prev">
+                ◀ 上一首
+            </button>
+
+
+            <button id="next">
+                下一首 ▶
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="library">
+
+        <h2>
+            我的音乐库
+        </h2>
+
+
+        <ul id="musicList">
+
+        </ul>
+
+
+    </section>
+
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
